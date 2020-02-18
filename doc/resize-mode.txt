@@ -1,0 +1,123 @@
+*resize-mode.txt* A Vim mode for easier window resizing
+*resize* *resize-mode* *vim-resize-mode*
+
+         Author:  Rich Cheng <http://whileyouweregone.co.uk>
+       Homepage:  http://github.com/sedm0784/vim-resize-mode
+      Copyright:  © 2020 Rich Cheng
+        Licence:  Resize Mode uses the same licence as Vim. (See
+                  |license|.)
+        Version:  1.0.0
+
+==============================================================================
+     ___   ____  __   _  ____  ____      _      ___   ___   ____           ~
+    | |_) | |_  ( (` | |  / / | |_      | |\/| / / \ | | \ | |_            ~
+    |_| \ |_|__ _)_) |_| /_/_ |_|__     |_|  | \_\_/ |_|_/ |_|__           ~
+                                                                          ~
+==============================================================================
+CONTENTS                                                *resize-mode-contents*
+
+    1. Introduction ..........................|resize-mode-introduction|
+    2. Usage .................................|resize-mode-usage|
+        2.1 Count ............................|resize-mode-count|
+        2.2 Mappings .........................|resize-mode-mappings|
+    3. Changelog .............................|resize-mode-changelog|
+    4. Issues ................................|resize-mode-issues|
+    5. Credits ...............................|resize-mode-credits|
+
+==============================================================================
+1. Introduction                                     *resize-mode-introduction*
+
+Resize Mode is a plugin that makes resizing windows a bit more interactive and
+therefore EASIER. It does this by allowing you to issue multiple resize
+commands without having to keep pressing   <C-W>.
+
+Before: >
+
+    <C-W>+<C-W>+<C-W>+<C-W>+<C-W>+<C-W>><C-W>>
+<
+After: >
+
+    <C-W>+++++>>
+<
+==============================================================================
+2. Usage                                                   *resize-mode-usage*
+
+When you use any of the following normal mode window resize commands, you will
+then enter resize mode:
+
+- |CTRL-W_+|
+- |CTRL-W_-|
+- |CTRL-W_>|
+- |CTRL-W_<|
+
+While in resize mode, you can use any of the other window resize sub-commands
+(+, -, >, or <) without pressing   <C-W>   again first. Pressing any other key
+will immediately exit Resize Mode AND DO WHATEVER THAT KEY NORMALLY DOES. If
+you are in resize mode and press   j   then your cursor will move downwards a
+line.
+
+This means that resize mode does not break your muscle memory.
+
+------------------------------------------------------------------------------
+2.1 Count                                                  *resize-mode-count*
+
+If you use a [count] when entering resize mode, then that count is used for
+all operations until you exit resize mode e.g. if you type: >
+
+    5<C-W>++
+<
+
+then the window will be increased by ten lines vertically, five lines the
+first time you press   +   and five lines the second time you press it.
+
+------------------------------------------------------------------------------
+2.2 Mappings                                            *resize-mode-mappings*
+
+CTRL-W +                                                *resize-mode-CTRL-W_+* 
+CTRL-W -                                                *resize-mode-CTRL-W_-*
+CTRL-W >                                                *resize-mode-CTRL-W_>*
+CTRL-W <                                                *resize-mode-CTRL-W_<*
+
+Because Resize Mode is intended to be as transparent as possible, by default
+it replaces the usual window resize normal mode commands as described in
+|resize-mode-usage|.
+
+If, however, you wish to use some other mappings for entering resize mode, you
+can add alternative mappings such as the following to your .vimrc. Resize Mode
+will then use these mappings INSTEAD OF the defaults: >
+
+    nmap <leader>+ <Plug>ResizeIncreaseHeight
+    nmap <leader>- <Plug>ResizeDecreaseHeight
+    nmap <leader>> <Plug>ResizeIncreaseWidth
+    nmap <leader>< <Plug>ResizeDecreaseWidth
+<
+==============================================================================
+3. Changelog                                           *resize-mode-changelog*
+
+Version 1.0.0 - Resize Mode released
+
+==============================================================================
+4. Issues                                                 *resize-mode-issues*
+
+You can contact me via the GitHub repository to ask questions or report
+issues:
+
+    https://github.com/sedm0784/vim-resize-mode
+
+Or if you prefer, feel free to email or tweet instead:
+
+    resize hyphen mode at whileyouweregone dot co dot uk
+    @sedm0784
+
+==============================================================================
+6. Credits                                               *resize-mode-credits*
+
+Resize Mode was written by Rich Cheng.
+
+The banner at the top of this help file was created using the “Broadway KB”
+FIGlet font at the Text ASCII Art Generator:
+
+    http://patorjk.com/software/taag/
+
+==============================================================================
+ vim:tw=78:ts=8:ft=help:norl:
