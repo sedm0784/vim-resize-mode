@@ -1,8 +1,4 @@
 function! resize_mode#start(direction, count) abort
-  echohl ModeMsg
-  echo '-- RESIZE --'
-  echohl None
-
   " The cursor is in the command line while this function is executing.
   " Highlight the position of the cursor in the buffer.
   let match_id = matchadd('Cursor', '\%#')
@@ -12,6 +8,9 @@ function! resize_mode#start(direction, count) abort
     " Resize
     execute a:count . 'wincmd' nr2char(c)
     redraw
+    echohl ModeMsg
+    echo '-- RESIZE --'
+    echohl None
     let c = getchar()
     if index(['+', '-', '>', '<'], nr2char(c)) >= 0
       continue
