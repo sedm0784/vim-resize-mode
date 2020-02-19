@@ -19,9 +19,11 @@ nnoremap <silent> <Plug>ResizeDecreaseWidth :<C-U>call resize_mode#start('<', v:
 
 if !hasmapto('<Plug>ResizeIncreaseHeight')
   nmap <unique> <C-W>+ <Plug>ResizeIncreaseHeight
+  nmap <unique> <C-W><kPlus> <Plug>ResizeIncreaseHeight
 endif
 if !hasmapto('<Plug>ResizeDecreaseHeight')
   nmap <unique> <C-W>- <Plug>ResizeDecreaseHeight
+  nmap <unique> <C-W><kMinus> <Plug>ResizeDecreaseHeight
 endif
 if !hasmapto('<Plug>ResizeIncreaseWidth')
   nmap <unique> <C-W>> <Plug>ResizeIncreaseWidth
