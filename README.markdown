@@ -38,6 +38,20 @@ CONTINUE resizing by pressing any of the resize keys:
 
 EXIT resize mode by using any Vim command that is *not* a window resize command.
 
+## Why Not Just Use a [[count]](https://vimhelp.org/intro.txt.html#count)?
+
+Visual Feedback! Sometimes it's easier just to MASH a resize key rather than attempting to figure out in advance precisely how many lines to resize.
+
+And Resize Mode is even better when you use a [count], because it maintains the count throughout the resize operation!
+
+I'm not terrible at eyeballing numbers of lines, but it's still quicker for me to type:
+
+<kbd>5</kbd><kbd>Ctrl-W</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd>
+
+rather than:
+
+<kbd>5</kbd><kbd>0</kbd><kbd>Ctrl-W</kbd><kbd>+</kbd> *Whoops! Overshot&hellip;*  <kbd>Ctrl-W</kbd><kbd>5</kbd><kbd>-</kbd>.
+
 ## Further Details
 
 [:help resize-mode](https://github.com/sedm0784/vim-resize-mode/blob/master/doc/resize-mode.txt)
