@@ -12,7 +12,7 @@ Resize Mode is a small, unobtrusive, Vim plugin that makes resizing windows a li
 
 ## Installation
 
-Resize Mode is implemented in pure Vimscript. Simply install normally using Vim&apos;s [packages](https://vimhelp.org/repeat.txt.html#packages) feature\*, or with your favourite plugin manager.
+Resize Mode is implemented in pure Vimscript. Simply install normally using Vim&rsquo;s [packages](https://vimhelp.org/repeat.txt.html#packages) feature\*, or with your favourite plugin manager.
 
 <sup>\* See the **Using a single plugin and loading it automatically** subheading.
 
@@ -24,7 +24,7 @@ No configuration is required.\*
 
 ## Usage
 
-ENTER resize mode by using Vim&apos;s normal resize mappings:
+ENTER resize mode by using Vim&rsquo;s normal resize mappings:
 
 - <kbd>Ctrl-W</kbd><kbd>+</kbd>
 - <kbd>Ctrl-W</kbd><kbd>-</kbd>
@@ -42,11 +42,11 @@ EXIT resize mode by using any Vim command that is *not* a window resize command.
 
 ## Why Not Just Use a [[count]](https://vimhelp.org/intro.txt.html#count)?
 
-Visual Feedback! Sometimes it&apos;s easier just to MASH a resize key rather than attempting to figure out in advance precisely how many lines to resize.
+Visual Feedback! Sometimes it&rsquo;s easier just to MASH a resize key rather than attempting to figure out in advance precisely how many lines to resize.
 
 And Resize Mode is even better when you use a [count], because it maintains the count throughout the resize operation!
 
-I&apos;m not terrible at eyeballing numbers of lines, but it&apos;s still quicker for me to type:
+I&rsquo;m not terrible at eyeballing numbers of lines, but it&rsquo;s still quicker for me to type:
 
 <kbd>5</kbd><kbd>Ctrl-W</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd>
 
