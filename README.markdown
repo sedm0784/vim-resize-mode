@@ -18,9 +18,9 @@ Resize Mode is implemented in pure Vimscript. Simply install normally using Vim'
 
 ## Configuration
 
-No configuration is required.*
+No configuration is required.\*
 
-<sup>* See [:help resize-mode-mappings](https://github.com/sedm0784/vim-resize-mode/blob/81d0e2c792fdc4ce0927582a48d9d9f42db1ec42/doc/resize-mode.txt#L78) for advanced configuration.</sup>
+<sup>\* See [:help resize-mode-mappings](https://github.com/sedm0784/vim-resize-mode/blob/81d0e2c792fdc4ce0927582a48d9d9f42db1ec42/doc/resize-mode.txt#L78) for advanced configuration.</sup>
 
 ## Usage
 
