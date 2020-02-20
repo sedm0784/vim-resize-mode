@@ -107,7 +107,8 @@ Version 1.0.0 - Resize Mode released
 4.1 Known Issues                                    *resize-mode-known-issues*
 
 When in resize mode, the cursor is visible in the command line. I have an idea
-for a fix, but it's pretty hacky, so I'm holding off.
+for a fix, but it's pretty hacky, so I'm hoping a better solution will present
+itself.
 
 ------------------------------------------------------------------------------
 4.2 Reporting Issues                            *resize-mode-reporting-issues*
