@@ -8,11 +8,11 @@
 
 <kbd>Ctrl-W</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>></kbd><kbd>></kbd>
 
-Resize Mode is a small, unobtrusive, Vim plugin that makes resizing windows a little easier. It streamlines window resizing, by allowing you to repeat resize operations without having to keep telling Vim that you want to resize the window, but it stays out of your way: if you forget it's there, Vim will work completely normally as it always has.
+Resize Mode is a small, unobtrusive, Vim plugin that makes resizing windows a little easier. It streamlines window resizing, by allowing you to repeat resize operations without having to keep telling Vim that you want to resize the window, but it stays out of your way: if you forget it&apos;s there, Vim will work completely normally as it always has.
 
 ## Installation
 
-Resize Mode is implemented in pure Vimscript. Simply install normally using Vim's [packages](https://vimhelp.org/repeat.txt.html#packages) feature\*, or with your favourite plugin manager.
+Resize Mode is implemented in pure Vimscript. Simply install normally using Vim&apos;s [packages](https://vimhelp.org/repeat.txt.html#packages) feature\*, or with your favourite plugin manager.
 
 <sup>\* See the **Using a single plugin and loading it automatically** subheading.
 
@@ -24,7 +24,7 @@ No configuration is required.\*
 
 ## Usage
 
-ENTER resize mode by using Vim's normal resize mappings:
+ENTER resize mode by using Vim&apos;s normal resize mappings:
 
 - <kbd>Ctrl-W</kbd><kbd>+</kbd>
 - <kbd>Ctrl-W</kbd><kbd>-</kbd>
@@ -42,11 +42,11 @@ EXIT resize mode by using any Vim command that is *not* a window resize command.
 
 ## Why Not Just Use a [[count]](https://vimhelp.org/intro.txt.html#count)?
 
-Visual Feedback! Sometimes it's easier just to MASH a resize key rather than attempting to figure out in advance precisely how many lines to resize.
+Visual Feedback! Sometimes it&apos;s easier just to MASH a resize key rather than attempting to figure out in advance precisely how many lines to resize.
 
 And Resize Mode is even better when you use a [count], because it maintains the count throughout the resize operation!
 
-I'm not terrible at eyeballing numbers of lines, but it's still quicker for me to type:
+I&apos;m not terrible at eyeballing numbers of lines, but it&apos;s still quicker for me to type:
 
 <kbd>5</kbd><kbd>Ctrl-W</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd><kbd>+</kbd>
 
