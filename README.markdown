@@ -12,7 +12,7 @@ Resize Mode is a small, unobtrusive, Vim plugin that makes resizing windows a li
 
 ## Install
 
-Resize Mode is implemented in pure Vimscript. Simply install normally using Vim's [packages](http://vimhelp.org/repeat.txt.html#packages) feature, or with your package manager.
+Resize Mode is implemented in pure Vimscript. Simply install normally using Vim's [packages](https://vimhelp.org/repeat.txt.html#packages) feature, or with your package manager.
 
 ## Configuration
 
