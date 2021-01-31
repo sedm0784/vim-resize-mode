@@ -47,7 +47,7 @@ After: >
 2. Usage                                                   *resize-mode-usage*
 
 When you use any of the following normal mode window resize commands, you will
-then enter resize mode:
+enter resize mode:
 
 - |CTRL-W_+|
 - |CTRL-W_-|
@@ -70,7 +70,6 @@ all operations until you exit resize mode e.g. if you type: >
 
     5<C-W>++
 <
-
 then the window will be increased by ten lines vertically, five lines the
 first time you press   +   and five lines the second time you press it.
 

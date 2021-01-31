@@ -1,9 +1,9 @@
 " resize-mode.vim
 " Author: Rich Cheng <http://whileyouweregone.co.uk>
 " Homepage: http://github.com/sedm0784/vim-resize-mode
-" Copyright: © 2015 Rich Cheng
+" Copyright: © 2020 Rich Cheng
 " Licence: Resize Mode uses the Vim licence.
-" Version: 0.1.0
+" Version: 1.0.0
 
 scriptencoding utf-8
 
