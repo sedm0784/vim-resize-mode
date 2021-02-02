@@ -3,7 +3,7 @@
 " Homepage: http://github.com/sedm0784/vim-resize-mode
 " Copyright: © 2020 Rich Cheng
 " Licence: Resize Mode uses the Vim licence.
-" Version: 1.0.0
+" Version: 1.0.1
 
 scriptencoding utf-8
 

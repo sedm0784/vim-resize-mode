@@ -6,7 +6,7 @@
       Copyright:  © 2020 Rich Cheng
         Licence:  Resize Mode uses the same licence as Vim. (See
                   |license|.)
-        Version:  1.0.0
+        Version:  1.0.1
 
 ==============================================================================
         ___   ____  __   _  ____  ____      _      ___   ___   ____ ~
@@ -97,6 +97,7 @@ will then use these mappings INSTEAD OF the defaults: >
 ==============================================================================
 3. Changelog                                           *resize-mode-changelog*
 
+Version 1.0.1 - Support older versions of Vim
 Version 1.0.0 - Resize Mode released
 
 ==============================================================================

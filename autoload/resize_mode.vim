@@ -4,7 +4,7 @@ function! resize_mode#start(direction, count) abort
   let match_id = matchadd('Cursor', '\%#')
 
   let c = char2nr(a:direction)
-  while v:true
+  while 1
     " Resize
     execute a:count . 'wincmd' nr2char(c)
     redraw
@@ -31,7 +31,7 @@ function! s:exit_mode(c, match_id) abort
 
   " getchar() sometimes returns a number, sometimes a string. If it's a
   " number, convert for passing into feedkeys.
-  let c = (type(a:c) == v:t_number) ? nr2char(a:c) : a:c
+  let c = (type(a:c) == type(0)) ? nr2char(a:c) : a:c
 
   " In order that you can use the <C-W> mappings in exactly the same way
   " as before, when you exit the mode with a keypress, the keypress
