@@ -1,7 +1,16 @@
 function! resize_mode#start(direction, count) abort
   " The cursor is in the command line while this function is executing.
   " Highlight the position of the cursor in the buffer.
-  let match_id = matchadd('Cursor', '\%#')
+  try
+    " Test if there is a Cursor highlight group. If there isn't this will
+    " throw an error we can catch.
+    silent highlight Cursor
+  catch /^Vim\%((\a\+)\)\=:E411:/
+    highlight default Cursor term=reverse cterm=reverse gui=reverse
+  finally
+    let match_id = matchadd('Cursor', '\%#')
+  endtry
+
 
   let c = char2nr(a:direction)
   while 1
